@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   background-color: #121214;
   background-image: url(assets/bg.svg);
@@ -8,6 +13,14 @@ body {
 #app {
   width: fit-content;
   margin: 52px auto;
+}
+
+header {
+  margin-bottom: 63px;
+}
+
+ul {
+  list-style: none;
 }
 
 ul img {
