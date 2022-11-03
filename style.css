@@ -63,12 +63,22 @@ header {
 
 .card ul {
   list-style: none;
+
+  display: grid;
+  gap: 24px;
 }
 
 .card ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 270px;
+}
+
+.card ul li + li {
+  padding-top: 24px;
+  border-top: 1px solid #323238;
 }
 
 .card ul li img {
