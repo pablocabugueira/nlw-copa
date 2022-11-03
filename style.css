@@ -61,10 +61,23 @@ header {
   text-transform: uppercase;
 }
 
-ul {
+.card ul {
   list-style: none;
 }
 
-ul img {
+.card ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card ul li img {
   width: 50px;
+}
+
+.card ul li strong {
+  color: #E1E1E6;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 125%;
 }
