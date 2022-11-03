@@ -1,0 +1,15 @@
+body {
+  background-color: #121214;
+  background-image: url(assets/bg.svg);
+  background-position-x: center;
+  background-position-y: 55.6%;
+}
+
+#app {
+  width: fit-content;
+  margin: 52px auto;
+}
+
+ul img {
+  width: 50px;
+}
