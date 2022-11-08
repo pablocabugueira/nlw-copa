@@ -26,6 +26,11 @@ header {
   text-align: center;
 }
 
+main {
+  display: grid;
+  gap: 32px;
+}
+
 .card {
   padding: 32px 23px;
 
