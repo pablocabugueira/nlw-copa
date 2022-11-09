@@ -20,16 +20,9 @@ function createCard(date, day, games) {
   `
 }
 
-document.querySelector("#app").innerHTML = `
-  <header>
-      <img src="assets/logo-nlw.svg" alt="Logo da NLW Copa">
-  </header>
+document.querySelector("#cards").innerHTML =
+  createCard("20/11", "domingo", createGame("qatar", "13:00", "ecuador", "o", "o", "Catar", "Equador")) +
 
-  <main>
-      ${createCard("20/11", "domingo", createGame("qatar", "13:00", "ecuador", "o", "o", "Catar", "Equador"))}
+  createCard("21/11", "segunda", createGame("england", "10:00", "iran", "a", "o", "Inglaterra", "Irã") + createGame("senegal", "13:00", "netherlands", "o", "a", "Senegal", "Holanda") + createGame("united-states", "16:00", "wales", "o", "o", "Estados Unidos", "Gales")) +
 
-      ${createCard("21/11", "segunda", createGame("england", "10:00", "iran", "a", "o", "Inglaterra", "Irã") + createGame("senegal", "13:00", "netherlands", "o", "a", "Senegal", "Holanda") + createGame("united-states", "16:00", "wales", "o", "o", "Estados Unidos", "Gales"))}
-
-      ${createCard("22/11", "terça", createGame("argentina", "07:00", "saudi-arabia", "a", "a", "Argentina", "Arábia Saudita") + createGame("denmark", "10:00", "tunisia", "a", "a", "Dinamarca", "Tunísia") + createGame("mexico", "13:00", "poland", "o", "a", "México", "Polônia") + createGame("france", "16:00", "australia", "a", "a", "França", "Austrália"))}
-  </main>
-`
+  createCard("22/11", "terça", createGame("argentina", "07:00", "saudi-arabia", "a", "a", "Argentina", "Arábia Saudita") + createGame("denmark", "10:00", "tunisia", "a", "a", "Dinamarca", "Tunísia") + createGame("mexico", "13:00", "poland", "o", "a", "México", "Polônia") + createGame("france", "16:00", "australia", "a", "a", "França", "Austrália"))
