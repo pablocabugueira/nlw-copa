@@ -97,3 +97,32 @@ header {
   font-weight: 900;
   line-height: 125%;
 }
+
+/* ANIMATION */
+
+.card {
+  animation: appear 1s;
+}
+
+.card h2:hover,
+.card ul li img:hover,
+.card ul li strong:hover {
+  transform: scale(1.1);
+}
+
+.card h2,
+.card ul li img,
+.card ul li strong {
+  transition: transform 0.3s;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
