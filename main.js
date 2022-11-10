@@ -8,9 +8,9 @@ function createGame(player1, hour, player2, gen, gen2, alt, alt2) {
   `
 }
 
-let delay = -0.1;
+let delay = -0.2;
 function createCard(date, day, games) {
-  delay = delay + 0.1
+  delay = delay + 0.2
   return `
     <section class="card" style="animation-delay: ${delay}s">
       <h2>${date} <span>${day}</span></h2>
@@ -25,6 +25,8 @@ function createCard(date, day, games) {
 document.querySelector("#cards").innerHTML =
   createCard("20/11", "domingo", createGame("qatar", "13:00", "ecuador", "o", "o", "Catar", "Equador")) +
 
-  createCard("21/11", "segunda", createGame("england", "10:00", "iran", "a", "o", "Inglaterra", "Irã") + createGame("senegal", "13:00", "netherlands", "o", "a", "Senegal", "Holanda") + createGame("united-states", "16:00", "wales", "o", "o", "Estados Unidos", "Gales")) +
+  createCard("21/11", "segunda", createGame("england", "10:00", "iran", "a", "o", "Inglaterra", "Irã") + createGame("senegal", "13:00", "netherlands", "o", "a", "Senegal", "Holanda") + createGame("united-states", "16:00", "wales", "o", "o", "Estados Unidos", "País de Gales")) +
 
-  createCard("22/11", "terça", createGame("argentina", "07:00", "saudi-arabia", "a", "a", "Argentina", "Arábia Saudita") + createGame("denmark", "10:00", "tunisia", "a", "a", "Dinamarca", "Tunísia") + createGame("mexico", "13:00", "poland", "o", "a", "México", "Polônia") + createGame("france", "16:00", "australia", "a", "a", "França", "Austrália"))
+  createCard("22/11", "terça", createGame("argentina", "07:00", "saudi-arabia", "a", "a", "Argentina", "Arábia Saudita") + createGame("denmark", "10:00", "tunisia", "a", "a", "Dinamarca", "Tunísia") + createGame("mexico", "13:00", "poland", "o", "a", "México", "Polônia") + createGame("france", "16:00", "australia", "a", "a", "França", "Austrália")) +
+
+  createCard("23/11", "quarta", createGame("morocco", "07:00", "croatia", "e", "a", "Marrocos", "Croácia") + createGame("germany", "10:00", "japan", "a", "o", "Alemanha", "Japão") + createGame("spain", "13:00", "costa-rica", "a", "a", "Espanha", "Costa Rica") + createGame("belgium", "16:00", "canada", "a", "o", "Bélgica", "Canadá"))

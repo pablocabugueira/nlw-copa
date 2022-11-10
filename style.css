@@ -121,7 +121,8 @@ header {
 /* ANIMATION */
 
 .card {
-  animation: appear 1s;
+  opacity: 0;
+  animation: appear 1s forwards;
 }
 
 .card h2:hover,
