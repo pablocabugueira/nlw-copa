@@ -16,7 +16,7 @@ body * {
 }
 
 body {
-  background: #121214 var(--bg) no-repeat top center/contain;
+  background: #121214 var(--bg) no-repeat top center/cover;
 }
 
 body#blue {
@@ -155,5 +155,11 @@ header {
     max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 920px) {
+  body {
+    background-size: contain;
   }
 }
