@@ -16,7 +16,7 @@ body * {
 }
 
 body {
-  background: #121214 var(--bg) no-repeat top center/cover;
+  background: #121214 var(--bg) no-repeat top center/contain;
 }
 
 body#blue {
