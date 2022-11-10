@@ -37,7 +37,7 @@ body#green {
   width: fit-content;
 
   margin: auto;
-  padding-top: 52px;
+  padding: 52px 18px;
 }
 
 header {
@@ -138,7 +138,7 @@ header {
 
 @keyframes appear {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-50px);
     opacity: 0;
   }
 
