@@ -157,9 +157,3 @@ header {
     flex-wrap: wrap;
   }
 }
-
-@media (min-width: 920px) {
-  body {
-    background-size: contain;
-  }
-}
