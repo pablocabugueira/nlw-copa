@@ -23,7 +23,7 @@ body#blue {
   --card-primary-color: #338AF3;
   --card-title-border-color: #338AF3;
   --card-bg-color: #202024;
-  --bg: url(assets/bg-blue.svg);
+  --bg: url(assets/bg-blue.jpg);
 }
 
 body#green {
